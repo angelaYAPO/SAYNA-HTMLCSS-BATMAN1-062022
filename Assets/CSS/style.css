@@ -1,27 +1,223 @@
-                    img {
-                        background-color: black;
-                    }
-                    
-                    h1 {
-                        color: white;
-                    }
-                    
-                    h2 {
-                        color: white;
-                    }
-                    
-                    p {
-                        color: white;
-                    }
-                    
-                    h3 {
-                        color: white;
-                    }
-                    
-                    a {
-                        color: white;
-                    }
-                    
-                    ul {
-                        text-align: right;
-                    }
+@font-face {
+    font-family: 'rajdhani';
+    src: url(./Assets/police/Rajdhani-Medium.ttf);
+}
+
+@font-face {
+    font-family: 'space-Grotesk bold';
+    src: url(./Assets/police/spaceGrotesk-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'space-Grotesk Regular';
+    src: url(./Assets/police/spaceGrotesk-Regular.ttf);
+}
+
+ :root {
+    --yellow-color: #ff0;
+    --white-color: #fff;
+    --black-color: #000;
+    --gray-color: #c4c4c4;
+    --yellow1-color: #f8f184;
+    --black1-color: #0d0e09;
+    --maron-color: #b11313;
+    --bleu-color: #19589d;
+    --gradient-white: #eddebf67;
+    --gradient-red: #89000978;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1 {
+    color: white;
+    font-family: 'rajdhani';
+    font-weight: 400;
+    font-size: 36px;
+    margin-bottom: 40px;
+    margin: 10px;
+}
+
+button {
+    font-family: 'rajdhani';
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+    border: #fff 2px;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: 'space-Grotesk';
+    font-weight: 300;
+}
+
+
+/*design de la navigation*/
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0;
+    height: 200px;
+}
+
+ul {
+    text-align: right;
+    list-style: none;
+}
+
+nav ul a {
+    color: var(--white-color);
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'rajdhani';
+    list-style: none;
+}
+
+nav ul a:hover {
+    color: var(--yellow-color);
+}
+
+
+/* design de la partie en tete hero*/
+
+#hero {
+    background-image: url(../Illustrations/Bathome1.png);
+    height: 800px;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.content {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    width: 60%;
+    margin: 0 auto;
+    padding-top: 150px;
+}
+
+#hero.titre {
+    margin: 20px 0;
+}
+
+.btn {
+    text-decoration: none;
+    color: var(--white-color);
+    font-size: 22px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background: linear-gradient( 80deg, var(--gradient-white), var(--gradient-red));
+    box-shadow: var(--black-color) 5px 5px 60px;
+}
+
+#hero .fleche {
+    display: block;
+    margin: 0 auto;
+    margin-top: 255px;
+}
+
+.scroll {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    right: 80px;
+    top: 240px;
+}
+
+.scroll .social {
+    margin-top: 15px;
+}
+
+
+/* design de la section batman-personnage*/
+
+#batman-cinema,
+#justice-league {
+    margin-top: 40px;
+}
+
+.card {
+    display: flex;
+    justify-content: space-between;
+}
+
+#batman-cinéma .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+#batman-cinéma .description #justice-league .description {
+    margin-bottom: 40px;
+    text-align: justify;
+    width: 80%;
+    font-size: 21px;
+}
+
+#batman-cinéma .personnage-info .h3 .p {
+    text-align: center;
+}
+
+#batman-cinéma .titre,
+#justice-league .titre {
+    text-transform: uppercase;
+    font-weight: bold;
+    margin: 30px 0;
+}
+
+
+/* design de la partie multimedua*/
+
+#multimédia .slider-multimédia {
+    display: flex;
+    width: 60%;
+    margin: 40px 0;
+}
+
+#multimedia .slider-image {
+    width: 100%;
+}
+
+#multimedia .slider-content {
+    padding: 15px;
+    background-color: #727272;
+}
+
+#multimedia .p {
+    font-size: 14px;
+}
+
+h2 {
+    color: white;
+    font-family: 'space-Grotesk Regular';
+    font-size: 30px;
+    font-weight: 300;
+}
+
+p {
+    color: white;
+    font-family: 'space-Grotesk Regular';
+    font-size: 20px;
+    font-weight: 300;
+}
+
+h3 {
+    color: white;
+    font-family: 'space-Grotesk Regular';
+    font-size: 20px;
+    font-weight: 300;
+}
