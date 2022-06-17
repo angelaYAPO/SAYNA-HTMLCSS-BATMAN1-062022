@@ -101,9 +101,9 @@
             </div>
         </section>
         <!--la section Alliés-->
-        <section class="section4">
-            <div>
-                <h1>Alliés</h1>
+        <section id="allié">
+            <div class="container">
+                <h1 class="titre">Alliés</h1>
                 <p>Alfred est le majordome des Wayne. A leur mort il s’occupe de l’éducation du jeune Bruce avant de l’assister dans son rôle du Batman. Ce dernier rencontrera Catwoman dès le premier numéro des aventures de l’homme chauve-souris en 1940.
                     Tantôt ennemie tantôt alliée la jeune femme fatale fera tourner la tête de Batman à maintes reprises. Du côté de la police, Bruce pourra compter sur l’aide infaillible de James Gordon, “Jim”, qui désire lui aussi nettoyer sa ville
                     de la criminalité qui y règne.
@@ -168,68 +168,80 @@
             </div>
         </section>
         <!-- section formulaire-->
-        <div>
-            <h2>PRENOM CONTACT</h2>
-            <form action="">
-                <label>ADRESSE EMAIL</label>
-                <input type="EMAIL" name="EMAIL" placeholder="email">
-                <label for="Newsletter" NEWSLETTER</label> <br>
-                <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
-                    Batman :</label> <br>
-                <input type="Checkbox">
-                <br>
-                <div>
-                    <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
-                    <span>
-                        <img src="./Assets/Logos/icon_flèche_2.png">
-                    </span>
-                </div>
-                <div>
-                    <p>Souhaitez-vous recevoir des news
-                    </p>
-                </div>
-                <a href="">Des films</a>
-                <a href="">Des comics</a>
-                <a href="" De tout</a>
-                    <p>MESSAGE</p>
+        <section id="contact">
+            <div class="form">
+                <h2>PRENOM CONTACT</h2>
+                <form action="">
+                    <label class="titre" for="email">ADRESSE EMAIL</label>
+                    <input type="EMAIL" name="EMAIL" placeholder="email">
+                    <label class="titre" for="Newsletter" NEWSLETTER</label> <br>
+                    <label for="">En cochant cette case vous acceptez de recevoir l’actualité concernant les aventures de 
+                        Batman :</label> <br>
+                    <input type="Checkbox">
+                    <div>
+                        <span>Choisissez la fréquence à laquelle vous souhaitez recevoir votre newsletter</span>
+                        <span class="icon">
+                            <img src="./Assets/Logos/icon_flèche_2.png">
+                        </span>
+                    </div>
+                    <div>
+                        <p class="news">Souhaitez-vous recevoir des news
+                        </p>
+                    </div>
+                    <div class="btn-group">
+                        <input type="radio" id="film">
+                        <label for="film"> Des Films</label>
+                        <input type="radio" id="comics">
+                        <label for="comics"> Des Comics</label>
+                        <input type="radio" id="tout">
+                        <label for="tout"> De tout</label>
+                    </div>
+                    <p class="titre">MESSAGE</p>
                     <textarea name="" id="" cols="30" rows="10" placeholder="Laissez un commentaire pour la communauté"></textarea>
                     <input type="submit" value="CONFIRMER">
-            </form>
-        </div>
+                </form>
+            </div>
+        </section>
+
         <!-- Section citation-->
-        <section>
-            <div>
-                <div>
+        <section id="citation">
+            <div class="container">
+                <div class="guillemet-open">
                     <img src="./Assets/Logos/icon_guillemets_1.png">
                 </div>
-                <div>
-                    <p>La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
+                <div class="citation-text">
+                    <p class="text">La seule façon raisonnable de vivre en ce bas monde, c'est en dehors des règles.</p>
                 </div>
-                <div>
+                <div class="auteur">
                     The Dark Knight : Le Chevalier Noir - Le Joker à Batman (2008)
                 </div>
-                <div>
+                <div class="guillemet-close">
                     <img src="./Assets/Logos/icon_guillemets_2.png">
                 </div>
             </div>
         </section>
+        <div class="clearfix"></div>
         <footer>
-            <div>
-                <img src="./Assets/Logos/icon_WB.png">
-                <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
+            <div class="container">
+                <div class="text-footer">
+                    <img src="./Assets/Logos/icon_WB.png">
+                    <p>Ce projet respecte l’univers cinématographique des films Batman récents. Version Nolan & Snyder & Reeves</p>
+                </div>
             </div>
-            <div class="description">
-                <a href="#">
+            <div class="social-footer">
+                <a href="#" class="social-item">
                     <img src="./Assets/Logos/logo_sayna_white.png">
                     <img src="./Assets/Logos/icon_x.png">
                     <img src="./Assets/Logos/icon_DC.png">
                 </a>
-                <a href=""><img src="./Assets/Logos/icon_facebook.png"></a>
-                <a href=""><img src="./Assets/Logos/icon_ig.png"></a>
-                <a href=""><img src="./Assets/Logos/icon_tw.png"></a>
-            </div>
+
+                <a class="social-item" href=""><img src="./Assets/Logos/icon_facebook.png"></a>
+                <a class="social-item" href=""><img src="./Assets/Logos/icon_ig.png"></a>
+                <a class="social-item" href=""><img src="./Assets/Logos/icon_tw.png"></a>
+
             </div>
         </footer>
+    </main>
 
 
 

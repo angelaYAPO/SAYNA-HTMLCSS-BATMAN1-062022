@@ -182,7 +182,23 @@ nav ul a:hover {
 
 /* design de la partie multimedua*/
 
-#multimédia .slider-multimédia {
+#multimedia button {
+    position: relative;
+    top: 155px;
+    background: none;
+    border: none;
+}
+
+#multimedia button.right {
+    right: -65%;
+}
+
+#multimedia button.left {
+    left: -65%;
+    width: 100%;
+}
+
+#multimedia .slider-multimedia {
     display: flex;
     width: 60%;
     margin: 40px 0;
@@ -195,10 +211,98 @@ nav ul a:hover {
 #multimedia .slider-content {
     padding: 15px;
     background-color: #727272;
+    /* border-raduis 20px;*/
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
 }
 
 #multimedia .p {
     font-size: 14px;
+}
+
+#multimedia .yellow {
+    color: var(--yellow-color);
+}
+
+
+/* design de la partie contact - formulaire*/
+
+#contact {
+    background-color: darkslategrey;
+    padding: 70px 0;
+}
+
+#contact .form {
+    width: 50%;
+    margin: 0 auto;
+}
+
+#contact .h2 {
+    text-align: center;
+    font-size: 80px;
+    margin-bottom: 32px;
+}
+
+#contact .titre {
+    display: block;
+    margin: 30px 0;
+}
+
+#contact .form input[type='email'],
+textarea {
+    display: block;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    width: 80%;
+    border-bottom: 2px solid rgb(120, 120, 120);
+    background-color: transparent;
+    padding: 10px 0;
+}
+
+#contact .news {
+    margin: 15px 0;
+    border-bottom: 2px solid rgb(120, 120, 120);
+}
+
+#contact .icon img {
+    transform: rotate(90deg);
+    width: 20px;
+}
+
+::placeholder {
+    color: #f8f184;
+    font-size: 15px;
+}
+
+.btn-group {
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.form input[type="radio"] {
+    opacity: 0;
+}
+
+.btn-group label {
+    cursor: pointer;
+    border: 2px solid;
+    border-color: var(--black-color);
+    padding: 10px;
+    border-image: linear-gradient( 69deg, white black;
+    );
+    border-image: linear-gradient( 69deg, white black;
+    );
+    font-size: 20px;
+}
+
+input[type='submit'] {
+    display: block;
+    width: 250px;
+    margin: 25px auto;
+    padding: 15px 0;
+    cursor: pointer;
 }
 
 h2 {
@@ -220,4 +324,50 @@ h3 {
     font-family: 'space-Grotesk Regular';
     font-size: 20px;
     font-weight: 300;
+}
+
+
+/* section citation*/
+
+#citation {
+    margin: 90px;
+}
+
+#citation .citation-text {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+#citation .auteur {
+    padding-top: 20px;
+    font-size: 14px;
+    font-family: 'rajdhani';
+    text-align: center;
+}
+
+#citation .guillemet-close {
+    float: right;
+}
+
+#citation .guillemet-open {
+    float: left;
+}
+
+
+/*design du footer*/
+
+footer {
+    margin-top: 162px;
+}
+
+footer .text-footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+.social-footer {
+    padding: 15px;
+    text-align: center;
 }
